@@ -71,3 +71,51 @@ This project focuses on analyzing restaurant menu and order data using SQL to un
 - Subqueries with IN
 - LIMIT clause for Top-N analysis
 - Data exploration and customer behavior analysis
+
+# Walmart Sales Data Analysis
+## Description
+This project analyzes Walmart sales data using SQL to uncover business insights related to sales performance, customer behavior, product trends, branch performance, and revenue generation. The dataset contains transaction records including customer information, product details, sales amounts, taxes, ratings, and payment methods.
+
+The project also includes data cleaning and feature engineering by creating new columns such as time_of_day, day_name, and month_name to enable deeper analysis.
+### File name
+- WalmartSalesData.csv
+- walmartsales-queries
+  # Purpose of the Project
+The main objectives of this project are to:
+Practice SQL data cleaning and data exploration techniques.
+Analyze sales trends and customer purchasing behavior.
+Identify top-performing products, branches, and cities.
+Evaluate revenue, VAT, and customer satisfaction metrics.
+Generate business insights that can support decision-making.
+
+# SQL Concepts Used
+## Data Definition Language (DDL)
+- CREATE DATABASE
+- CREATE TABLE
+- ALTER TABLE
+ ## Data Manipulation Language (DML)
+- UPDATE
+- Data Querying
+ - SELECT
+- DISTINCT
+- WHERE
+- ORDER BY
+- GROUP BY
+- HAVING
+## Aggregate Functions
+- COUNT()
+- SUM()
+- AVG()
+- ROUND()
+## Date & Time Functions
+- DAYNAME()
+- MONTHNAME()
+## Conditional Logic
+- CASE WHEN
+## Subqueries
+- Nested SELECT statements
+## Data Cleaning & Feature Engineering
+- Creating new analytical columns:
+-- time_of_day
+-- day_name
+-- month_name

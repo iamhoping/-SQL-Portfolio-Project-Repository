@@ -1,5 +1,5 @@
 
-## Restaurant Sales & Customer Behavior Analysis
+# Restaurant Sales & Customer Behavior Analysis
 
 ### Overview
 This project focuses on analyzing restaurant menu and order data using SQL to uncover customer ordering behavior, spending patterns, and menu performance.

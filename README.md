@@ -23,7 +23,8 @@ Cleaned and standardized a real-world layoffs dataset for accurate analysis.
 - Created analysis-ready dataset
 
 **Tech:** SQL, CTEs, Window Functions  
- View Project: (link)
+ View Project: ([link](https://github.com/iamhoping/-SQL-Portfolio-Project-Repository/tree/main/layoffs-data-cleaning
+))
 
 ---
 
@@ -36,7 +37,8 @@ Analyzed workforce salary data to identify compensation trends and HR insights.
 - Used advanced SQL automation (procedures, triggers)
 
 **Tech:** SQL, Joins, Window Functions, CTEs  
- View Project: (link)
+ View Project: ([link](https://github.com/iamhoping/-SQL-Portfolio-Project-Repository/tree/main/employee-salary-analysis
+))
 
 ---
 
@@ -49,7 +51,8 @@ Analyzed customer ordering behavior and menu performance.
 - Discovered peak sales and demand trends
 
 **Tech:** SQL, Aggregations, Joins, Subqueries  
- View Project: (link)
+ View Project: ([link](https://github.com/iamhoping/-SQL-Portfolio-Project-Repository/tree/main/restaurant-analysis
+))
 
 ---
 
@@ -62,7 +65,7 @@ Analyzed retail sales data to uncover business performance insights.
 - Time-based sales trends (day, month, hour)
 
 **Tech:** SQL, Data Cleaning, CASE, Aggregations  
- View Project: (link)
+ View Project: ([link](https://github.com/iamhoping/-SQL-Portfolio-Project-Repository/tree/main/walmart-sales-analysis))
 
 ---
 
@@ -89,7 +92,7 @@ Analyzed retail sales data to uncover business performance insights.
 
 ##  Contact
 
-- LinkedIn: https://linkedin.com/in/yourprofile
+- LinkedIn: ??
 - Email: pinedajaymark99@gmail.com
 
 ---

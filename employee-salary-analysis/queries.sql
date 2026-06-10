@@ -1,4 +1,5 @@
 
+
 #Group employees by age and display:age
 SELECT 
     age,
@@ -121,3 +122,69 @@ FROM
                 employee_salary)
     GROUP BY dept_id , fullname , occupation) AS subq
     order by fullname;
+
+
+
+
+#Common Table Expressionn excercise 'CTE'
+with  salary_cte as (SELECT 
+        CONCAT(first_name, ' ', last_name) AS fullname,
+        dept_id ,occupation ,
+        AVG(salary) AS avg_salary
+    FROM employee_salary
+    WHERE salary > (SELECT AVG(salary) FROM employee_salary)
+    group by fullname, dept_id,occupation
+    )
+    
+select fullname,dept_id,avg_salary from salary_cte;
+
+
+#create temporary table
+create temporary table avg_salary2(
+	select concat(first_name,' ',last_name) fullname, dept_id,avg(salary) from employee_salary
+    where salary > (select avg(salary) from employee_salary)
+    group by dept_id,fullname);
+        
+select * from avg_salary2;
+
+
+#create procedure table without parameter
+delimiter $$
+create procedure max_salary()
+begin
+	select dept_id,max(salary)
+    from employee_salary
+    where salary >= (select max(salary) from employee_salary)
+    group by dept_id;
+end $$
+delimiter ;
+
+call max_salary();
+
+#create procedure table with parameter
+delimiter $$
+CREATE PROCEDURE max_salary2(param_dept_id int)
+begin
+	select dept_id,max(salary)
+    from employee_salary
+    where salary <= (select max(salary) from employee_salary) and dept_id = param_dept_id
+    group by dept_id;
+end
+delimiter ;
+
+call max_salary2(1);
+
+
+#create events
+delimiter $$
+create event delete_retirees
+on schedule every 30 second #every day, year, month
+do 
+begin
+ delete 
+ from employee_demographics
+ where age >= 60;
+ end $$
+ delimiter ;
+ 
+ select * from employee_demographics;
